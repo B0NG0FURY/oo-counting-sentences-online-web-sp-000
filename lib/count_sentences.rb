@@ -16,6 +16,7 @@ class String
 
   def count_sentences
     count = []
+    if self.length > 0
       test = self.split("!"".""?")
       binding.pry
     else
