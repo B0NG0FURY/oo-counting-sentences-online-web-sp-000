@@ -17,8 +17,12 @@ class String
   def count_sentences
     count = []
     if self.length > 0
-      test = self.split("!"".""?")
-      binding.pry
+      sentence = self.split
+      sentence.each do |part|
+        if part.end_with?(".") || part.end_with?("!") || part.end_with?("?")
+          count += 1
+      end
+      return count
     else
       return 0
     end
