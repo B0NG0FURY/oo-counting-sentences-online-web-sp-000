@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    count = []
+    count = 0
     if self.length > 0
       sentence = self.split
       sentence.each do |part|
