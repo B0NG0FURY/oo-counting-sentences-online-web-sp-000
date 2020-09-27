@@ -21,6 +21,7 @@ class String
       sentence.each do |part|
         if part.end_with?(".") || part.end_with?("!") || part.end_with?("?")
           count += 1
+        end
       end
       return count
     else
